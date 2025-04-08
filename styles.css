@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+    color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contenedor:hover {
+    transform: scale(1.01);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #00ffe1;
+    text-shadow: 0 0 10px #00ffe1;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #3a3a3a;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    transition: box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus {
+    box-shadow: 0 0 8px #00ffd0;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 0.6rem 1rem;
+    margin: 0.4rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    background-color: #00ffd0;
+    color: #1e1e1e;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+    background-color: #00e6b8;
+    transform: translateY(-2px);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.tarea-item {
+    background: #3b3b3b;
+    margin: 0.5rem 0;
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.tarea-texto {
+    flex-grow: 1;
+    text-align: left;
+}
+
+.tarea-texto.completada {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+.boton-alternar,
+.boton-eliminar {
+    margin-left: 0.5rem;
+    background-color: #ff5c5c;
+    color: #fff;
+    padding: 0.4rem 0.7rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    transition: background-color 0.2s ease;
+}
+
+.boton-alternar:hover {
+    background-color: #ff8686;
+}
+
+.boton-eliminar {
+    background-color: #444;
+}
+
+.boton-eliminar:hover {
+    background-color: #666;
+}
