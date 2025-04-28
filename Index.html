@@ -3,17 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Tareas</title>
+    <title>Lista de Tareas Pro</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="contenedor">
-        <h1>👿 Lista de Tareas 👿</h1>
-        <input type="text" id="entradaTarea" placeholder="Nueva tarea">
-        <button id="botonAgregar">Agregar</button>
+    <main class="contenedor">
+        <h1>📋 Lista de Tareas</h1>
+
+        <section class="agregar-tarea">
+            <input type="text" id="inputTarea" placeholder="Escribe una tarea...">
+            <button id="btnAgregar">Agregar</button>
+        </section>
+
+        <section class="filtros">
+            <button class="filtro" data-filtro="todas">Todas</button>
+            <button class="filtro" data-filtro="pendientes">Pendientes</button>
+            <button class="filtro" data-filtro="completadas">Completadas</button>
+        </section>
+
         <ul id="listaTareas"></ul>
-        <button id="botonEliminarCompletadas">Eliminar Completadas</button>
-    </div>
+
+        <section class="acciones">
+            <button id="btnEliminarCompletadas">Eliminar Completadas</button>
+            <div id="tareaMasRapida" class="tarea-rapida"></div>
+        </section>
+    </main>
+
     <script src="script.js"></script>
 </body>
 </html>
